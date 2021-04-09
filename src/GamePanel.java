@@ -144,9 +144,7 @@ public class GamePanel extends JPanel implements ActionListener {
         FontMetrics metrics2 = getFontMetrics(g.getFont());
         g.drawString("Game Over", (SCREEN_WIDTH -
                 metrics2.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
-
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -155,6 +153,7 @@ public class GamePanel extends JPanel implements ActionListener {
             checkApple();
             checkCollisions();
         }
+
         repaint();
     }
     public class MyKeyAdapter extends KeyAdapter {
